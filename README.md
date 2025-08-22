@@ -100,7 +100,7 @@ Além das funcionalidades inicialmente previstas, foram implementadas:
 ### 5.2 Configuração do Backend
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/igormpassos/tcis-app.git
+git clone https://github.com/igormpassos/TP-SISWEB
 cd tcis-app
 
 # 2. Configure o backend
