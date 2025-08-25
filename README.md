@@ -4,11 +4,11 @@
 
 ### Resumo
 
-O trabalho final apresenta o desenvolvimento de um Sistema de Gerenciamento de Relatórios de Inspeção de Carga (TCIS), uma aplicação mobile multiplataforma desenvolvida em Flutter com backend Node.js. O sistema permite o gerenciamento completo de relatórios de inspeção, incluindo criação, edição, visualização e administração de dados relacionados como usuários, terminais, produtos e fornecedores. A aplicação oferece funcionalidades offline para criação de relatórios e sincronização automática quando há conexão disponível, atendendo às necessidades de inspetores de carga em terminais portuários e ferroviários.
+O trabalho final apresenta o desenvolvimento de um Sistema de Gerenciamento de Relatórios de Inspeção de Carga (TCIS), uma aplicação mobile multiplataforma desenvolvida em Flutter com backend Node.js. O sistema permite o gerenciamento completo de relatórios de inspeção, incluindo criação, edição, visualização e administração de dados relacionados como usuários, terminais, produtos e fornecedores.
 
 ## 1. Funcionalidades implementadas
 
-### 1.1 Sistema Mobile (Flutter)
+### 1.1 Sistema Web
 - **Autenticação de usuários** com sistema de roles (USER/ADMIN)
 - **Criação completa de relatórios de inspeção** incluindo:
   - Seleção de terminal, produto e fornecedor
@@ -48,18 +48,6 @@ O trabalho final apresenta o desenvolvimento de um Sistema de Gerenciamento de R
 - **Suporte a HTTPS** e certificados SSL
 
 ## 2. Funcionalidades previstas e não implementadas
-
-- **Modo offline completo** - Implementação parcial (estrutura preparada mas não finalizada)
-- **Sincronização automática** - Backend preparado mas sincronização não implementada
-- **Sistema de filtros avançados** nos relatórios móveis
-- **Notificações push** em tempo real
-- **Backup automático** em nuvem
-- **Relatórios analíticos** com gráficos e estatísticas
-
-## 3. Outras funcionalidades implementadas
-
-Além das funcionalidades inicialmente previstas, foram implementadas:
-
 - **Sistema de gerenciamento de clientes** (funcionalidade adicional)
 - **Interface web administrativa** completa
 - **Sistema de logs detalhado** no backend
@@ -70,34 +58,34 @@ Além das funcionalidades inicialmente previstas, foram implementadas:
 - **Scripts de manutenção** e utilitários
 - **Documentação técnica** detalhada de deploy
 
-## 4. Principais desafios e dificuldades
+## 3. Principais desafios e dificuldades
 
-### 4.1 Desafios Técnicos
+### 3.1 Desafios Técnicos
 - **Gerenciamento de Estado no Flutter**: Implementação da arquitetura Provider para estado global
 - **Upload de Imagens**: Configuração correta do sistema de upload com validação e otimização
 - **Relacionamentos Complexos**: Modelagem e implementação de relacionamentos entre entidades no Prisma
 - **Autenticação JWT**: Implementação segura com renovação de tokens e middleware
 
-### 4.2 Desafios de Infraestrutura
+### 3.2 Desafios de Infraestrutura
 - **Containerização**: Configuração otimizada do Docker para desenvolvimento e produção
 - **Proxy Reverso**: Configuração do Nginx para servir aplicação e API
 - **Deploy Automatizado**: Criação de scripts robustos para deploy em diferentes ambientes
 
-### 4.3 Desafios de UX/UI
+### 3.3 Desafios de UX/UI
 - **Responsividade**: Garantir experiência consistente em diferentes tamanhos de tela
 - **Fluxo de Navegação**: Criação de navegação intuitiva entre as diferentes funcionalidades
 - **Feedback Visual**: Implementação de indicadores de loading e estados de erro
 
-## 5. Instruções para instalação e execução
+## 4. Instruções para instalação e execução
 
-### 5.1 Pré-requisitos
+### 4.1 Pré-requisitos
 - Flutter SDK 3.7.2+
 - Node.js 18+
 - PostgreSQL 14+
 - Docker e Docker Compose (opcional)
 - Git
 
-### 5.2 Configuração do Backend
+### 4.2 Configuração do Backend
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/igormpassos/TP-SISWEB
